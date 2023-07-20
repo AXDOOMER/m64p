@@ -1,8 +1,5 @@
 # m64p
 
-**Downloads found here: https://github.com/loganmc10/m64p/releases**
-___
-
 Linux Dependencies (Ubuntu 18.04)
 ```
 sudo apt install qt5-default libqt5websockets5 libsdl2-2.0-0 libsdl2-net-2.0-0 libhidapi-hidraw0 libminizip1 p7zip-full
@@ -30,10 +27,10 @@ ln -s /usr/local/Cellar/qt/5.15.1/plugins /usr/local/plugins
 ln -s /usr/local/Cellar/qt/5.15.1/mkspecs /usr/local/mkspecs
 ln -s /usr/local/Cellar/qt/5.15.1/qmake /usr/local/bin/qmake
 ```
-___
+
 Building:
 ```
-git clone https://github.com/loganmc10/m64p.git
+git clone https://github.com/AXDOOMER/m64p
 cd m64p
 ./build.sh
 ```
