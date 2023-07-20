@@ -52,6 +52,7 @@ jobs:
             mingw-w64-x86_64-python3-pyopenssl
             mingw-w64-x86_64-pcre
             mingw-w64-x86_64-icu
+            mingw-w64-x86_64-openssl
             git
             zip
       - name: Run build script
