@@ -19,6 +19,7 @@ jobs:
       - name: Run build script
         run: |
           export M64P_AUTOUPDATE=0
+          export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
           bash ./build.sh
       - name: Upload zip
         uses: actions/upload-artifact@v2
