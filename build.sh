@@ -53,7 +53,7 @@ cp $base_dir/mupen64plus-audio-sdl2/projects/unix/*$suffix $install_dir
 cd $base_dir
 GUI_DIRECTORY=$base_dir/mupen64plus-gui
 #rev=\"`git rev-parse HEAD`\"
-rev='"0.0.0"'
+rev="rev$(date +'%Y%m%d')"
 lastrev=$(head -n 1 $GUI_DIRECTORY/version.h | awk -F'GUI_VERSION ' {'print $2'})
 
 echo current revision $rev
@@ -178,6 +178,6 @@ if [[ $UNAME != *"Darwin"* ]]; then
   cd $base_dir
   rm -f $base_dir/*.zip
   #HASH=$(git rev-parse --short HEAD)
-  HASH="0.0.0"
+  HASH="rev$(date +'%Y%m%d')"
   zip -r m64p-$my_os-$HASH.zip mupen64plus
 fi
