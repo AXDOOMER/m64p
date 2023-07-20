@@ -4,7 +4,8 @@ on: [push, pull_request]
 
 jobs:
   build-linux:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
+    container: ubuntu:18.04
     steps:
       - uses: actions/checkout@v2
       - name: Get short SHA
@@ -61,7 +62,7 @@ jobs:
           name: m64p-win64-${{ steps.slug.outputs.sha7 }}.zip
           path: m64p-*.zip
   build-mac:
-    runs-on: macos-10.15
+    runs-on: macos-12
     steps:
       - uses: actions/checkout@v2
       - name: Get short SHA
