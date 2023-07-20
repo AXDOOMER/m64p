@@ -165,6 +165,7 @@ if [[ $UNAME == *"MINGW"* ]]; then
   cp /$mingw_prefix/bin/libssl-3-x64.dll $install_dir/libssl-1_1-x64.dll
   cp /$mingw_prefix/bin/libcrypto-3-x64.dll $install_dir
   cp /$mingw_prefix/bin/libcrypto-3-x64.dll $install_dir/libcrypto-1_1-x64.dll
+  cp /$mingw_prefix/bin/libmd4c.dll $install_dir
   cp $base_dir/7za.exe $install_dir
   cp $base_dir/mupen64plus-gui/discord/discord_game_sdk.dll $install_dir
 elif [[ $UNAME == *"Darwin"* ]]; then
