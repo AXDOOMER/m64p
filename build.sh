@@ -147,6 +147,7 @@ if [[ $UNAME == *"MINGW"* ]]; then
   cp /$mingw_prefix/bin/libminizip-1.dll $install_dir
   cp /$mingw_prefix/bin/libsamplerate-0.dll $install_dir
   cp /$mingw_prefix/bin/libjasper.dll $install_dir
+  cp /$mingw_prefix/bin/libjasper.dll $install_dir/libjasper-4.dll
   cp /$mingw_prefix/bin/libjpeg-8.dll $install_dir
   cp /$mingw_prefix/bin/libpcre2-16-0.dll $install_dir
   cp /$mingw_prefix/bin/libdouble-conversion.dll $install_dir
