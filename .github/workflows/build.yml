@@ -27,7 +27,7 @@ jobs:
           name: m64p-linux64-${{ steps.slug.outputs.sha7 }}.zip
           path: m64p-*.zip
   build-windows:
-    runs-on: windows-2022
+    runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
       - name: Get short SHA
