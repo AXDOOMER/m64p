@@ -53,7 +53,7 @@ cp $base_dir/mupen64plus-audio-sdl2/projects/unix/*$suffix $install_dir
 cd $base_dir
 GUI_DIRECTORY=$base_dir/mupen64plus-gui
 #rev=\"`git rev-parse HEAD`\"
-rev="0.0.0"
+rev='"0.0.0"'
 lastrev=$(head -n 1 $GUI_DIRECTORY/version.h | awk -F'GUI_VERSION ' {'print $2'})
 
 echo current revision $rev
