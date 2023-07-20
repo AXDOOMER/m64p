@@ -177,6 +177,7 @@ fi
 if [[ $UNAME != *"Darwin"* ]]; then
   cd $base_dir
   rm -f $base_dir/*.zip
-  HASH=$(git rev-parse --short HEAD)
+  #HASH=$(git rev-parse --short HEAD)
+  HASH="0.0.0"
   zip -r m64p-$my_os-$HASH.zip mupen64plus
 fi
